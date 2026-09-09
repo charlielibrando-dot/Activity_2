@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div *ngIf="profile as profile">
+  <div class="avatar-wrapper">
+    <img
+      [src]="profile.profilePicture"
+      [alt]="profile.username"
+      class="avatar-image"
+    />
+  </div>
+
+  <ion-list class="info">
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-note slot="end">{{ profile.username }}</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-note slot="end">{{ profile.email }}</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Address</ion-label>
+      <ion-note slot="end">{{ profile.address }}</ion-note>
+    </ion-item>
+  </ion-list>
+</div>
+</ion-content>

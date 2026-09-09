@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Catalog</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="catalog">
+
+    <ion-card *ngFor="let product of products">
+
+      <img [src]="product.image" [alt]="product.name">
+
+      <ion-card-header>
+        <ion-card-title>
+          {{ product.name }}
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <h2>₱{{ product.price }}</h2>
+
+        <ion-button
+          expand="block" (click)="viewProduct(product.id)">View
+        </ion-button>
+
+      </ion-card-content>
+
+    </ion-card>
+
+  </div>
+
+</ion-content>

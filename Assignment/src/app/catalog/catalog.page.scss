@@ -1,0 +1,23 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+
+ion-card {
+  margin: 0;
+}
+
+ion-card img {
+  width: 100%;
+}
+
+ion-card-title {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 5px 0 12px;
+}

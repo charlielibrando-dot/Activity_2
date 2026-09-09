@@ -1,0 +1,32 @@
+.product {
+  padding: 20px;
+}
+
+.product-image {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product-info {
+  padding-top: 15px;
+}
+
+.product-info h1 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.product-info h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.product-info h3 {
+  font-size: 18px;
+}
+
+.product-info p {
+  line-height: 1.6;
+  color: #666;
+}
